@@ -1,0 +1,3 @@
+[submodule "brand-assets"]
+	path = brand-assets
+	url = https://github.com/frontierhack/brand-assets.git
