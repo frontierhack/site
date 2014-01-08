@@ -1,4 +1,5 @@
 [![FrontierHack](https://raw.github.com/frontierhack/brand-assets/master/frontier-hack-logo@2x.png)](http://frontierhack.com)
+
 FrontierHack brings hackathons to places that don't have them. This is the code for the main FrontierHack site.
 
 ## Host Your Own
