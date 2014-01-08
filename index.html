@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
-	<body>
+	<body itemscope itemtype="http://schema.org/Organization">
 		<!--[if lt IE 7]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
@@ -23,7 +23,8 @@
 		<header class="fixed">
 			<nav class="top-bar" data-topbar>
 				<ul class="title-area">
-					<li class="name" id="logo"><h1><img src="brand-assets/frontier-hack-logo.png" alt="FrontierHack"></h1></li>
+					<li class="name" id="logo"><h1><a itemprop="url" href="http://frontierhack.com/"><img itemprop="logo" src="brand-assets/frontier-hack-logo.png" alt="FrontierHack"></a></h1></li>
+					<meta itemprop="name" content="FrontierHack">
 				</ul>
 				<div class="top-bar-section">
 					<ul class="right">
@@ -71,8 +72,10 @@
 					<div class="large-10 large-centered column">
 						<h3>What is <span class="frontier-hack">Frontier<b>Hack</b></span>?</h3>
 						<img src="img/what-divider.png" data-joke="this-divider" data-not-funny="yeah, really." alt="" class="divider">
-						<p><span class="frontier-hack">Frontier<b>Hack</b></span> partners with organizers in communities that don’t have hackathons to bring the experience to everyone. We provide the necessary resources and expertise to put on these events while utilizing the organizer’s knowledge and connections to make the best event possible.</p>
-						<p><span class="frontier-hack">Frontier<b>Hack</b></span> is committed to putting on low-cost hackathons, with mentors who are dedicated to providing support to the community. We throw away the assumption that hackathons need to be giant productions and focus instead on creating an environment where developers can thrive.</p>
+						<div itemprop="description">
+							<p><span class="frontier-hack">Frontier<b>Hack</b></span> partners with organizers in communities that don’t have hackathons to bring the experience to everyone. We provide the necessary resources and expertise to put on these events while utilizing the organizer’s knowledge and connections to make the best event possible.</p>
+							<p><span class="frontier-hack">Frontier<b>Hack</b></span> is committed to putting on low-cost hackathons, with mentors who are dedicated to providing support to the community. We throw away the assumption that hackathons need to be giant productions and focus instead on creating an environment where developers can thrive.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -89,55 +92,76 @@
 			<div id="event-list">
 				<div class="row">
 					<ul class="large-11 large-centered column">
-						<li class="row event">
+						<li class="row event" itemscope itemtype="http://schema.org/Event">
 							<div class="date">
 								<div class="centerer">
 									<div class="month">Feb</div>
-									<div class="days">15-16</div>
+									<div class="days" itemprop="startDate" content="2014-02-15T18:00">15-16</div>
 								</div>
 							</div>
 							<div class="info">
-								<h3>Salt Lake City, UT</h3>
-								<div class="location">Salt Palace Convention Center</div>
-								<div class="address">100 W Temple, Salt Lake City, UT 84101</div>
+								<h3 itemprop="name" content="FrontierHack Salt Lake City, UT">Salt Lake City, UT</h3>
+								<div itemprop="location" itemscope itemtype="http://schema.org/Place">
+									<div class="location">Salt Palace Convention Center</div>
+									<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+										<span itemprop="streetAddress">100 W Temple</span>,
+										<span itemprop="addressLocality">Salt Lake City</span>,
+										<span itemprop="addressRegion">UT</span>
+										<span itemprop="postalCode">84101</span>
+									</div>
+								</div>
 								<div class="actions">
-									<a href="#" class="register button">Register</a>
+									<a href="#" class="register button" itemprop="url">Register</a>
 									<a href="#" class="tell-a-friend button">Tell A Friend</a>
 								</div>
 							</div>
 						</li>
 
-						<li class="row event">
+						<li class="row event" itemscope itemtype="http://schema.org/Event">
 							<div class="date">
 								<div class="centerer">
 									<div class="month">Feb</div>
-									<div class="days">15-16</div>
+									<div class="days" itemprop="startDate" content="2014-02-15T18:00">15-16</div>
 								</div>
 							</div>
 							<div class="info">
-								<h3>Salt Lake City, UT</h3>
-								<div class="location">Salt Palace Convention Center</div>
-								<div class="address">100 W Temple, Salt Lake City, UT 84101</div>
+								<h3 itemprop="name" content="FrontierHack Salt Lake City, UT">Salt Lake City, UT</h3>
+								<div itemprop="location" itemscope itemtype="http://schema.org/Place">
+									<div class="location">Salt Palace Convention Center</div>
+									<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+										<span itemprop="streetAddress">100 W Temple</span>,
+										<span itemprop="addressLocality">Salt Lake City</span>,
+										<span itemprop="addressRegion">UT</span>
+										<span itemprop="postalCode">84101</span>
+									</div>
+								</div>
 								<div class="actions">
-									<a href="#" class="register button">Register</a>
+									<a href="#" class="register button" itemprop="url">Register</a>
 									<a href="#" class="tell-a-friend button">Tell A Friend</a>
 								</div>
 							</div>
 						</li>
 
-						<li class="row event">
+						<li class="row event" itemscope itemtype="http://schema.org/Event">
 							<div class="date">
 								<div class="centerer">
 									<div class="month">Feb</div>
-									<div class="days">15-16</div>
+									<div class="days" itemprop="startDate" content="2014-02-15T18:00">15-16</div>
 								</div>
 							</div>
 							<div class="info">
-								<h3>Salt Lake City, UT</h3>
-								<div class="location">Salt Palace Convention Center</div>
-								<div class="address">100 W Temple, Salt Lake City, UT 84101</div>
+								<h3 itemprop="name" content="FrontierHack Salt Lake City, UT">Salt Lake City, UT</h3>
+								<div itemprop="location" itemscope itemtype="http://schema.org/Place">
+									<div class="location">Salt Palace Convention Center</div>
+									<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+										<span itemprop="streetAddress">100 W Temple</span>,
+										<span itemprop="addressLocality">Salt Lake City</span>,
+										<span itemprop="addressRegion">UT</span>
+										<span itemprop="postalCode">84101</span>
+									</div>
+								</div>
 								<div class="actions">
-									<a href="#" class="register button">Register</a>
+									<a href="#" class="register button" itemprop="url">Register</a>
 									<a href="#" class="tell-a-friend button">Tell A Friend</a>
 								</div>
 							</div>
@@ -191,7 +215,7 @@
 			<div class="methods row">
 				<div class="mail large-4 large-centered column">
 					<div class="icon fa fa-envelope"></div>
-					<a href="mailto:pioneers@frontierhack.com" class="method">pioneers@frontierhack.com</a>
+					<a href="mailto:pioneers@frontierhack.com" class="method" itemprop="email">pioneers@frontierhack.com</a>
 				</div>
 			</div>
 		</section>
