@@ -245,6 +245,10 @@ header.fixed {
 	margin-top: 0;
 }
 
+#event-list li h3 a {
+	color: inherit;
+}
+
 #event-list li .location {
 	font-size: 1.25rem;
 }
@@ -257,7 +261,7 @@ header.fixed {
 	margin: 10px 3px 0;
 }
 
-#event-list li .actions .register {
+#event-list li .actions .more-info {
 	margin-left: 0;
 }
 
@@ -267,6 +271,15 @@ header.fixed {
 
 #event-list li .actions .tell-a-friend:hover {
 	background: #b5b5b5;
+}
+
+#event-list li.your-event .date {
+	background: #e8e8e8;
+	color: #333;
+}
+
+#event-list li.your-event .date .centerer {
+	top: 20px;
 }
 
 #sponsors-section .header {
@@ -371,6 +384,10 @@ header.fixed {
 
 	#event-list li .date .centerer {
 		top: 39px;
+	}
+
+	#event-list li.your-event .date .centerer {
+		top: 55px;
 	}
 
 	#contact-section .methods .icon {
