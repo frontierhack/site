@@ -23,18 +23,6 @@ $(function () {
 					if(history.replaceState){
 						history.pushState('', document.title, window.location.pathname + hash);
 						$(window).trigger("hashchange");
-					}else{
-						if(hash){
-							var name = hash.substr(1),
-								$currentSection = $(".anchor a[name=" + name + "]");
-							$currentSection.attr("name","");
-							document.location.hash = hash;
-							$currentSection.attr("name", name);
-						}else{
-							var currentScrollTop = $(window).scrollTop();
-							document.location.hash = "";
-							$(window).scrollTop(currentScrollTop);
-						}
 					}
 				}
 			}
