@@ -44,6 +44,12 @@ $(function () {
 			scroll();
 		};
 
+	if (!Modernizr.svg) {
+		var $logo = $("#logo img");
+		var src = $logo.attr("src");
+		$logo.attr("src", src.replace("svg", "png"));
+	}
+
 	var currentHash = document.location.hash;
 
 	$(window).scroll(scroll);
